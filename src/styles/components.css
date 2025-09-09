@@ -1,0 +1,107 @@
+/* Component-specific styles */
+
+/* Form components */
+.form-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:focus:ring-primary-400 dark:focus:border-primary-400;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1;
+}
+
+.form-error {
+  @apply text-sm text-red-600 dark:text-red-400 mt-1;
+}
+
+.form-help {
+  @apply text-sm text-gray-500 dark:text-gray-400 mt-1;
+}
+
+/* Card components */
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700;
+}
+
+.card-header {
+  @apply px-6 py-4 border-b border-gray-200 dark:border-gray-700;
+}
+
+.card-body {
+  @apply px-6 py-4;
+}
+
+.card-footer {
+  @apply px-6 py-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700;
+}
+
+/* Table components */
+.table {
+  @apply w-full divide-y divide-gray-200 dark:divide-gray-700;
+}
+
+.table thead {
+  @apply bg-gray-50 dark:bg-gray-700;
+}
+
+.table th {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider;
+}
+
+.table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-200;
+}
+
+.table tbody tr:nth-child(even) {
+  @apply bg-gray-50 dark:bg-gray-700;
+}
+
+.table tbody tr:hover {
+  @apply bg-gray-100 dark:bg-gray-600;
+}
+
+/* Modal components */
+.modal-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 dark:bg-opacity-75;
+}
+
+.modal-content {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-xl max-h-screen overflow-y-auto;
+}
+
+.modal-body {
+  @apply px-6 py-4;
+}
+
+/* Notification components */
+.notification {
+  @apply fixed top-4 right-4 z-50 max-w-sm w-full bg-white dark:bg-gray-800 shadow-lg rounded-lg pointer-events-auto;
+}
+
+/* Sidebar components */
+.sidebar {
+  @apply bg-white dark:bg-gray-800 shadow-lg;
+}
+
+/* Page components */
+.page-header {
+  @apply mb-6;
+}
+
+.main-content {
+  @apply flex-1 overflow-y-auto bg-gray-50 dark:bg-gray-900;
+}
+
+/* Loading spinner */
+.spinner {
+  @apply animate-spin rounded-full h-6 w-6 border-b-2 border-primary-600;
+}
+
+/* Utility classes */
+.truncate {
+  @apply overflow-hidden whitespace-nowrap text-ellipsis;
+}
+
+/* Dark mode transitions */
+* {
+  @apply transition-colors duration-200;
+}
